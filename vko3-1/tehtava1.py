@@ -75,6 +75,8 @@ def main():
 
     # tarkista uudelleen, koska puketin luomisessa kestää, lataa tiedosto kun puketti löytyy
     while True:
+        list_buckets = get_buckets()
+
         if bucket_name in list_buckets:
             # siirrä tiedosto pukettiin
             file_name = "checkpoint.txt"
